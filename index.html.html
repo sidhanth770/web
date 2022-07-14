@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<style>
+
+.moveimg:hover{
+    transform: skewY(0deg);
+
+}
+
+* {
+  box-sizing: border-box;
+}
+.zoom {
+  padding: 50px;
+
+  transition: transform 2s;
+  overflow: hidden;
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+}
+
+	.bp{
+		width: 80px;
+	}
+</style>
+<script>
+$(document).ready(function(){
+$(".parafade").fadeIn(3000);
+$(".navfade").fadeIn(2000);
+
+});
+
+
+</script>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color: black; height: auto;">
+    <a class="navbar-brand text-white navfade"  style="display: none; font-size: 40px;" href="#"><img class="bp" src="medical website logo 2.png" alt=""></a>
+    <button class="navbar-toggler d-lg-none " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="background-color: white;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link text-white navfade" style="display: none;" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+         
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white navfade" style="display: none;" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="medical/medicine.html">Medicines</a>
+					  <a class="dropdown-item" href="medical/Untitled-1.html">Medical Devices</a>
+					
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white navfade" style="display: none;"  href="contact.html">Contact Us</a>
+            </li>
+            
+
+            <li class="nav-item">
+                <a class="nav-link text-white navfade" style="display: none;" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white navfade" style="display: none;" href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 navfade" style="display: none;" type="text" placeholder="Search">
+            <button type="button" class="btn btn-outline-danger navfade btn-lg" style="display: none;" data-toggle="modal" data-target="#modelId">
+                Login
+              </button>
+        </form>
+    </div>
+</nav>
+
+<br><br><br>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-caption" >
+          <p style="margin-top: -300px; display: none; letter-spacing: 3px; font-size: 20px; background-color: rgba(0,0,0,0.4);" class="parafade">
+
+
+          </p>
+        </div> 
+        <div class="carousel-item active">
+          <img src="images/pills.jpg" alt="" width="100%" height="620">
+            
+        </div>
+        <div class="carousel-item">
+          <img src="images/meds1.webp" alt="" width="100%" height="620">
+       
+        </div>
+        <div class="carousel-item">
+          <img src="images/medicinewise.jpg" alt="" width="100%" height="620">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+
+    <br><br>
+
+
+    <div class="container-fluid">
+      <!-- <div class="alert alert-danger">
+        <h1>LIMITED OFFER</h1>
+      </div> -->
+      <h1 style="background-color: red; color: white; font-size: 40px; text-align: center; letter-spacing: 6px; box-shadow: 5px 4px 5px black;">-----------LIMITED OFFER----------- </h1>
+<br><br>
+<div class="row text-center">
+    <div class="col-md-3">
+      <button class="btn btn-success btn-lg">Discount  <span class="badge badge-danger">50%</span></button>
+<img class="zoom img-fluid" src="images/download.jpg" height="100%" width="400px">
+<a href="buynow.html"> <button class="btn btn-outline-danger">Buy now</button></a>
+    </div>
+
+<div class="col-md-3">
+  <button class="btn btn-success btn-lg">Discount  <span class="badge badge-danger">50%</span></button>
+  <img class="zoom img-fluid" src="images/download (1).jpg"  height="75%" width="260px" >
+ <a href="buynow.html"> <button class="btn btn-outline-danger">Buy now</button></a>
+
+</div>
+
+<div class="col-md-3">
+  <button class="btn btn-success btn-lg">Discount<span class="badge badge-danger">50%</span></button>
+  <img class="zoom img-fluid" src="images/elite-compressor-nebulizer-500x500.jpg" height="100%" width="400px">
+<a href="buynow.html">  <button class="btn btn-outline-danger">Buy now</button></a>
+</div>
+
+
+<div class="col-md-3">
+  <button class="btn btn-success btn-lg">Discount<span class="badge badge-danger">50%</span></button>
+  <img class="zoom img-fluid" src="images/glucometer-500x500.jpg" height="100%" width="400px">
+ <a href="buynow.html"> <button class="btn btn-outline-danger">Buy now</button></a>
+</div>
+
+
+
+
+</div>
+    </div>
+
+
+
+    <br><br><br>
+    
+
+    <div class="jumbotron">
+<h3>Here's what you will get:</h3>
+<br><br>
+<div class="row">
+<div class="col-md-3">
+<img class="moveimg" src="images/tick.png" width="70" height="70">
+<br>
+<br>
+<p>expert services form one of our recommended partner or training to enable your chosen SI</p>
+</div>
+<div class="col-md-3">
+    <img class="moveimg" src="images/click.png" width="70" height="70">
+    <br>    <br>
+<p>interaction design consulation that focus on best parctices performance, conversion,and user experience within the mobify platform</p>
+</div>
+
+
+<div class="col-md-3">
+    <img class="moveimg" src="images/phone.png" width="70" height="70">
+    <br>    <br>
+<p>seasoned, project management, design, and development to ensure that your successfull implementation leverages every platform feature possible</p>
+</div>
+<div class="col-md-3">
+    <img class="moveimg" src="images/thumb.png" width="70" height="70">
+    <br>    <br>
+    <p>
+Ongoing sustainment, including adding any new platform features</p>
+</div>
+</div>
+
+
+</div>
+
+
+
+ <br>
+
+
+
+    <div class="container-fluid">
+
+<center><h3>Interested in becoming a SI partner?</h3></center>
+<center>
+<p class="lead">We partner with system integrators and agencies to deploy our platform and help grow a<br>shared customer base. To successfully deploy the Mobify Platform, partners will require<br>expertise in project management, user interface / user experience design, Javascript, QA<br>automation, HTML and CSS,  as well as native IOS and Andriod development.</p>
+</center>
+
+</div>
+
+<br><br>
+
+<div class="alert alert-success">
+<h3 class="display-4 text-center">Here's what you will get:</h3>
+<br><br>
+<div class="row">
+<div class="col-md-3">
+<img class="moveimg" src="images/convocation_cap.png" width="70" height="70">
+<br>
+<br>
+<p>expert services form one of our recommended partner or training to enable your chosen SI</p>
+</div>
+<div class="col-md-3">
+    <img class="moveimg" src="images/feedback.png" width="70" height="70">
+    <br>    <br>
+<p>interaction design consulation that focus on best parctices performance, conversion,and user experience within the mobify platform</p>
+
+</div>
+
+<div class="col-md-3">
+    <img class="moveimg" src="images/prev_next.png" width="70" height="70">
+    <br>    <br>
+<p>seasoned, project management, design, and development to ensure that your successfull implementation leverages every platform feature possible</p>
+</div>
+<div class="col-md-3">
+    <img class="moveimg"  src="images/hardworker.png" width="70" height="70">
+    <br>    <br>
+    <p>
+Ongoing sustainment, including adding any new platform features</p>
+</div>
+</div>
+</div>
+
+
+    
+<br><bR><br>
+    <div class="container-fluid " style="background-color: black;">
+      <br><br>
+          <div class="row">
+      
+      <div class="col-md-10">
+      <b>
+      <p style="color: #909090;">Ready to revolutionize your website?
+      </p>
+      </b>
+      </div>
+      <div class="col-md-2"><b>
+      <input type="button" value="Find a Store" style="width: 140px; border-radius: 5px; border-color: white; height: 50px;">
+      </b>
+      </div>
+      
+      </div>
+      
+      
+      <hr color="#909090" style="width: 100%;">
+      <div class="row">
+      <div class="col-md-3">
+      <ul>
+      
+      <li style="list-style: none; color: #909090; line-height: 2.5;">
+          Resources</li>
+          <li style="list-style: none; line-height: 2.5;">
+      <a href="#" class="text-white">Home</a>
+      
+           </li>
+      
+           <li style="list-style: none; line-height: 2.5;">
+                  <a href="#" class="text-white">Shop
+                  </a>
+               </li>
+                  <li style="list-style: none; line-height: 2.5;">
+                      <a href="#" class="text-white">Furniture</a>    
+                      </li>
+                      <li style="list-style: none; line-height: 2.5;">
+                          <a href="#" class="text-white">Blog</a>
+                  </li>
+                          <li style="list-style: none; line-height: 2.5;">
+                              <a href="#" class="text-white">My Account</a>    
+                          </li>
+      
+      
+      </ul>
+      
+      </div>
+      <div class="col-md-3">
+          <ul>
+      
+              <li style="list-style: none; color: #909090; line-height: 2.5;">
+                  Company</li>
+                  <li style="list-style: none; line-height: 2.5;">
+              <a href="#" class="text-white">Home</a>
+              
+                   </li>
+              
+                   <li style="list-style: none; line-height: 2.5;">
+                          <a href="#" class="text-white">Shop
+                          </a>
+                       </li>
+                          <li style="list-style: none; line-height: 2.5;">
+                              <a href="#" class="text-white">Furniture</a>    
+                              </li>
+                              <li style="list-style: none; line-height: 2.5;">
+                                  <a href="#" class="text-white">Blog</a>
+                          </li>
+                                  <li style="list-style: none; line-height: 2.5;">
+                                      <a href="#" class="text-white">My Account</a>    
+                                  </li>
+              
+              
+              </ul>
+              
+      </div>
+      <div class="col-md-3">
+          <ul>
+      
+              <li style="list-style: none; color: #909090; line-height: 2.5;">
+                  Contact Details</li>
+                  <li style="list-style: none; line-height: 2.2">
+      <p><i style="color: #909090; padding-right: -15px;" class="fa fa-map-marker"></i><span style="color: white; padding: 10px;">221B Baker Street</span> </p> 
+              
+                   </li>
+              
+                   <li style="list-style: none; line-height: 0.6;">
+                      <p><i style="color: #909090; padding-right: -15px;" class="fa fa-phone"></i><span style="color: white; padding: 10px;">(372) 587-2335
+                      </span> </p> 
+                  
+                       </li>
+                          <li style="list-style: none; line-height: 2.5;">
+                              <p><i style="color: #909090; padding-right: -15px;" class="fa fa-clock-o"></i><span style="color: white; padding: 10px;">11 a.m - 12 p.m
+                              </span> </p> 
+                          </li>
+                          
+              
+              
+              </ul>
+              
+      </div>
+      <div class="col-md-3">
+      <ul>
+      
+      
+          <li style="list-style: none; color: #909090; line-height: 2.5;">
+              Sign up for Newsletter</li>
+              <p><input type="email" name="ne" required="" class="form-control" placeholder="Enter Email Address">
+              </p>
+              <button class="form-control btn btn-outline-danger" style="width: 80px; height: 40px; float: right;">Submit</button>
+
+      </ul>
+      </div>
+      
+      </div>
+      <hr color="white">
+      <p style="text-align: center;padding: 1px; color: #909090;">© Built with pride and caffeine. All rights reserved.
+      </p>
+      <bR>
+      </div>
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <input type="text" placeholder="Username" class="form-control">
+            </div>
+            <div class="modal-body">
+              <input type="text" placeholder="Password" class="form-control">
+              </div>
+  
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-danger">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
